@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+   int n;
+   int czero=0;
+   int cone=0;
+   int i=0;
+   printf("Enter no. of ele in arr");
+   scanf("%d",&n);
+   int a[n];
+   for(i=0;i<n;i++){
+       scanf("%d",&a[i]);
+   }
+   for(i=0;i<n;i++){
+    if(a[i]==0){
+    czero++;
+    }
+    if(a[i]==1){
+    cone++;
+    }
+   }
+    for(i=0;i<czero;i++){
+        a[i]=0;
+    }
+    for(i=czero;i<n;i++){
+        a[i]=1;
+    }
+
+for(i=0;i<n;i++){
+    printf("%d",a[i]);
+}
+}
